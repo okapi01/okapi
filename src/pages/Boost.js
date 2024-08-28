@@ -345,22 +345,22 @@ const Boost = () => {
   
   
 
-  const calculateTimeRemaining = () => {
-    const now = new Date();
-    const nextDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-    const timeDiff = nextDate - now;
+  // const calculateTimeRemaining = () => {
+  //   const now = new Date();
+  //   const nextDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  //   const timeDiff = nextDate - now;
   
-    const hours = Math.floor(timeDiff / (1000 * 60 * 60));
-    const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+  //   const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+  //   const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+  //   const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
   
-    return { hours, minutes, seconds };
-  };
-  const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
+  //   return { hours, minutes, seconds };
+  // };
+  //const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimeRemaining(calculateTimeRemaining());
+      //setTimeRemaining(calculateTimeRemaining());
     }, 1000);
     
     return () => clearInterval(interval); // Clear interval on component unmount
@@ -501,7 +501,7 @@ const Boost = () => {
       {/* <div className="backdrop-blur-[10px] bg-cards absolute left-0 right-0 top-0 bottom-0 z-0 pointer-events-none"/> */}
 
 
-      <div className="flex space-x-2 w-full relative">
+      {/* <div className="flex space-x-2 w-full relative">
             <ImFire size={45} className={`${freeGuru > 0 ? '' : 'grayscale-[1]'} text-btn4 boostImg`}/>
               <div className="w-full flex justify-between items-center">
 
@@ -534,7 +534,7 @@ const Boost = () => {
             <MdOutlineKeyboardArrowRight size={30} className='text-[#959595]' />
             </div>
 
-            </div>
+            </div> */}
 
       
     </button>
