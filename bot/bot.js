@@ -10,7 +10,7 @@ if (!TOKEN) {
 const bot = new Telegraf(TOKEN);
 const app = express();
 app.use(express.json());
-const web_link = "https://okapitapapp.netlify.app/";
+const web_link = "https://okapi-topaz.vercel.app/";
 const community_link = "https://t.me/okapicommunity";
 
 bot.start((ctx) => {

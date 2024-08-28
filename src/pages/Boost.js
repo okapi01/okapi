@@ -517,7 +517,7 @@ const Boost = () => {
              <span className="text-btn4 boostAmount font-medium flex items-center justify-between w-full">
             <span className="text-[14px]"> 
             {freeGuru > 0 ? (
-   <span className="tapguru2">{freeGuru}Coming Soon</span>
+   <span className="tapguru2">{freeGuru}</span>
                       ) : (
                         <span className="tapguru2">      
                       {timeRemaining.hours}h {timeRemaining.minutes}m {timeRemaining.seconds}s
