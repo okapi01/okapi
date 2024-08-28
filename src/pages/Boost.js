@@ -493,10 +493,10 @@ const Boost = () => {
       {/*  */}
       <div className="w-full flex-col space-y-4">
 
-    <button 
+    {/* <button 
                   disabled={freeGuru <= 0}
                   onClick={() => setGuru(true)}
-     class={`${freeGuru > 0 ? 'opacity-100' : 'opacity-[.5]'} isolate cardios bg-cards3 w-full rounded-xl relative overflow-hidden p-3 z-10`}>
+     class={`${freeGuru > 0 ? 'opacity-100' : 'opacity-[.5]'} isolate cardios bg-cards3 w-full rounded-xl relative overflow-hidden p-3 z-10`}> */}
 
       {/* <div className="backdrop-blur-[10px] bg-cards absolute left-0 right-0 top-0 bottom-0 z-0 pointer-events-none"/> */}
 
@@ -537,7 +537,7 @@ const Boost = () => {
             </div> */}
 
       
-    </button>
+    {/* </button> */}
 
     {/*  */}
 
