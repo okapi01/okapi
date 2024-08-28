@@ -563,7 +563,7 @@ const Boost = () => {
      </span>
 
      <button className="text-btn4 py-1 px-3 bg-[#ffffff14] rounded-[5px] font-medium text-[13px] w-fit">
-       Coming soon...
+       Coming soon!
      </button>
 
    </div>
