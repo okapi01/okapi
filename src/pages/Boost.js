@@ -315,17 +315,19 @@ const Boost = () => {
           const newRemainingClicks = freeGuru - 1;
           setFreeGuru(newRemainingClicks);
   
-          // Update the Firestore document
+          // Update Firestore
           const userRef = doc(db, 'telegramUsers', id.toString());
           await updateDoc(userRef, {
             freeGuru: newRemainingClicks,
             timeSta: new Date(),
           });
-          
+  
+          // Activate the Tapping Guru effect
           startTimer();
           setMainTap(false);
           setTapGuru(true);
           location('/'); // Navigate to /home without refreshing the page
+  
           setCongrats(true);
           setIsDisabled(true);
           setTimeout(() => {
@@ -339,7 +341,8 @@ const Boost = () => {
         setIsDisabled(true);
       }
     }
-  };
+  };  
+  
   
 
   const calculateTimeRemaining = () => {
@@ -499,7 +502,7 @@ const Boost = () => {
 
 
       <div className="flex space-x-2 w-full relative">
-            <ImFire size={45} className={`${freeGuru > 5 ? '' : 'grayscale-[1]'} text-btn4 boostImg`}/>
+            <ImFire size={45} className={`${freeGuru > 0 ? '' : 'grayscale-[1]'} text-btn4 boostImg`}/>
               <div className="w-full flex justify-between items-center">
 
     
@@ -516,7 +519,7 @@ const Boost = () => {
              </span>
              <span className="text-btn4 boostAmount font-medium flex items-center justify-between w-full">
             <span className="text-[14px]"> 
-            {freeGuru > 5 ? (
+            {freeGuru > 0 ? (
    <span className="tapguru2">{freeGuru}</span>
                       ) : (
                         <span className="tapguru2">      
