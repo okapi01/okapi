@@ -499,7 +499,7 @@ const Boost = () => {
 
 
       <div className="flex space-x-2 w-full relative">
-            <ImFire size={45} className={`${freeGuru > 0 ? '' : 'grayscale-[1]'} text-btn4 boostImg`}/>
+            <ImFire size={45} className={`${freeGuru > 5 ? '' : 'grayscale-[1]'} text-btn4 boostImg`}/>
               <div className="w-full flex justify-between items-center">
 
     
@@ -516,7 +516,7 @@ const Boost = () => {
              </span>
              <span className="text-btn4 boostAmount font-medium flex items-center justify-between w-full">
             <span className="text-[14px]"> 
-            {freeGuru > 0 ? (
+            {freeGuru > 5 ? (
    <span className="tapguru2">{freeGuru}</span>
                       ) : (
                         <span className="tapguru2">      
@@ -563,7 +563,7 @@ const Boost = () => {
      </span>
 
      <button className="text-btn4 py-1 px-3 bg-[#ffffff14] rounded-[5px] font-medium text-[13px] w-fit">
-       Coming soon!
+       Coming soon...
      </button>
 
    </div>
