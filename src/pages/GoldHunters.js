@@ -342,7 +342,7 @@ if (points === 150) {
       setClicks((prevClicks) =>
         prevClicks.filter((click) => click.id !== newClick.id)
       );
-    }, 1000); // Match this duration with the animation duration
+    }, 1000); 
   };
   const handleClickGuru = (e) => {
    triggerHapticFeedback();
@@ -435,12 +435,11 @@ if (points === 150) {
       }, 2000)
     }
 
-    // Remove the click after the animation duration
     setTimeout(() => {
       setClicks((prevClicks) =>
         prevClicks.filter((click) => click.id !== newClick.id)
       );
-    }, 1000); // Match this duration with the animation duration
+    }, 1000); 
   };
 
 
@@ -463,7 +462,7 @@ if (points === 150) {
           setIsTimerVisible(true);
           clearTimeRemaining(); // Clear the timer and related states
         }
-        console.log('Points claimed successfully!');
+        console.log('Points claimed successfully');
       } catch (error) {
         console.error('Error updating balance and energy:', error);
       }
