@@ -849,7 +849,7 @@ background: #ffbfbf29;
 	border-radius: 50%;
 } 
 
-.earth-orbit {
+/* .earth-orbit {
 	width: 165px;
 	height: 165px;
   -webkit-animation: spin 12s linear 0s infinite;
@@ -865,7 +865,7 @@ background: #ffbfbf29;
 	width: 90px;
 	height: 90px;
   -webkit-animation: spin 3s linear 0s infinite;
-}
+} */
 
 .planet {
 	position: absolute;
@@ -890,7 +890,7 @@ background: #ffbfbf29;
 	align-items: center;
 	border-radius: 50%;
 }
-
+/* 
 .blue-orbit {
 	width: 165px;
 	height: 165px;
@@ -917,7 +917,7 @@ background: #ffbfbf29;
 	height: 60px;
   border: 2px solid #ffffff;
   -webkit-animation: spin3D 10s linear 0s infinite;
-}
+} */
 
 .w1 {
   transform: rotate3D(1, 1, 1, 90deg);
