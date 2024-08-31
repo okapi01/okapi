@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Analytics } from "@vercel/analytics/react"
 import { Outlet, useLocation } from "react-router-dom";
 import "../App.css";
 import "../fire.scss";
@@ -123,6 +124,7 @@ const location = useLocation();
             </AnimatePresence>
             </UserProvider>
             </TonConnectUIProvider>
+            <Analytics />
     
           
           
