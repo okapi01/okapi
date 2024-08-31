@@ -463,7 +463,7 @@ if (points === 150) {
           setIsTimerVisible(true);
           clearTimeRemaining(); // Clear the timer and related states
         }
-        console.log('Points claimed successfully');
+        console.log('Points claimed successfully!');
       } catch (error) {
         console.error('Error updating balance and energy:', error);
       }
